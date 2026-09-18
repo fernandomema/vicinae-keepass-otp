@@ -2,7 +2,9 @@
   "name": "keepass-otp-viewer",
   "title": "KeePass OTP Viewer",
   "description": "Search and view OTP/TOTP codes from KeePass .kdbx databases",
-  "categories": ["Security"],
+  "categories": [
+    "Security"
+  ],
   "license": "MIT",
   "author": "fernando",
   "icon": "extension_icon.webp",
@@ -43,10 +45,11 @@
   },
   "dependencies": {
     "@vicinae/api": "^0.8.2",
+    "argon2": "^0.45.1",
     "kdbxweb": "^2.1.1"
   },
   "devDependencies": {
-    "typescript": "^5.9.2",
-    "@types/node": "^20.11.0"
+    "@types/node": "^20.11.0",
+    "typescript": "^5.9.2"
   }
 }
