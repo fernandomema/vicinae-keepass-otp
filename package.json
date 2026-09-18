@@ -1,0 +1,52 @@
+{
+  "name": "keepass-otp-viewer",
+  "title": "KeePass OTP Viewer",
+  "description": "Search and view OTP/TOTP codes from KeePass .kdbx databases",
+  "categories": ["Security"],
+  "license": "MIT",
+  "author": "fernando",
+  "icon": "extension_icon.webp",
+  "commands": [
+    {
+      "name": "otp-viewer",
+      "title": "View OTP Codes",
+      "description": "Search and view OTP/TOTP codes from a KeePass database",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "kdbx-file",
+      "title": "KeePass Database File",
+      "description": "Path to your .kdbx database file",
+      "required": true,
+      "type": "file"
+    },
+    {
+      "name": "password",
+      "title": "Master Password",
+      "description": "Master password for the database",
+      "required": true,
+      "type": "password"
+    },
+    {
+      "name": "key-file",
+      "title": "Key File",
+      "description": "Optional key file for the database",
+      "required": false,
+      "type": "file"
+    }
+  ],
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop"
+  },
+  "dependencies": {
+    "@vicinae/api": "^0.8.2",
+    "kdbxweb": "^2.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2",
+    "@types/node": "^20.11.0"
+  }
+}
