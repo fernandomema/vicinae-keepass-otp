@@ -6,8 +6,8 @@
     "Security"
   ],
   "license": "MIT",
-  "author": "fernando",
-  "icon": "extension_icon.webp",
+  "author": "fernandomema",
+  "icon": "extension_icon.svg",
   "commands": [
     {
       "name": "otp-viewer",
